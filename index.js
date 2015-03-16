@@ -15,8 +15,6 @@ window.onload = function(event) {
     el.onsubmit = function(event) {
       event.preventDefault();
 
-      console.log('this.query.value', this.query.value);
-
       url = searchEndpoint + this.query.value + version + limit + jsonPCallback;
 
       getJsonP(url);
