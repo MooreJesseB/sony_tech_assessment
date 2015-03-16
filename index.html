@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+
+      <link rel="stylesheet" href="./public/styles/style.css">
+
+    </head>
+    <body>
+      <div class="v-spacer"></div>
+      <div class="h-spacer inline"></div>
+      <div class="container inline">
+        <div class="box search-box inline">
+          <form id="form-submit" class="search-form inline float-left">
+            <input id="query" class="form-input" type="text" placeholder="Search query..." autofocus>
+            <input id="submit" class="form-button" type="submit" value="Search">
+          </form>
+          <div id="query-container" class="inline float-left"></div>
+        </div>
+        <div class="box display-box">
+          <p id="total" class="inline">Total results: 0</p>
+          <button id="next-page" class="inline float-right page-button" value="1">
+            <img src="./public/images/arrow.png">
+          </button>
+          <p id="pages" class="inline float-right">0/0</p>
+          <button id="prev-page" class="inline float-right page-button" value="-1">
+            <img class="rotate-180" src="./public/images/arrow.png">
+          </button>
+          <br>
+          <div id="streams"></div>
+        </div>
+        <br>
+        <br>
+      </div>
+
+      <section id="script-container"></section>
+    
+      <script type="text/javascript" charset="utf-8" src='./lib/parse.js'></script>
+      <script type="text/javascript" charset="utf-8" src='./lib/jsonp.js'></script>
+      <script type="text/javascript" charset="utf-8" src='./lib/stream.js'></script>
+      <script type="text/javascript" charset="utf-8" src='./lib/layout.js'></script>
+      <script type="text/javascript" charsest="utf-8" src="./index.js"></script>    
+    </body>
+  </html>  
